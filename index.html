@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="author" content="Milton Vuong">
+  <title>Results</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div class="border">
+    <form action="results.html" method="GET">
+      <div class="flex">
+        <div>
+          <label>E-Mail:<input type="email" id="E-Mail" name="E-Mail" placeholder="E-Mail" required></label>
+        </div>
+        <div>
+          <label>Password:<input type="Password" id="Password" name="Password" placeholder="Password" required></label>
+        </div>
+      </div>
+      <hr>
+      <div class="flex">
+        <div>
+          <label>Full Name:<input type="text" id="FullName" name="Full Name" placeholder="Full Name" required></label>
+        </div>
+        <div>
+          <label>Age:<input type="number" id="Age" name="Age" min="18" max="99" placeholder="##" value="18"
+              required></label>
+        </div>
+        <div>
+          <label>Date of Birth:<input type="date" id="DateofBirth" name="Date of Birth"></label>
+        </div>
+        <div>
+          <label>Phone:<input type="tel" id="PhoneNumber" name="Phone Number" placeholder="###-###-####"></label>
+        </div>
+        <div>
+          <label for="ProfileLink">LinkedIn Profile:<input type="url" id="ProfileLink" name="Profile Link"></label>
+        </div>
+      </div>
+      <div class="grid-container">
+        <div class="grid-item">
+          <div class="center">
+            Student Status:
+          </div>
+          <div>
+            <label><input type="radio" id="NewStudent" name="New Student">New Student</label>
+            <label><input type="radio" id="CurrentStudent" name="Current Student">Current Student</label>
+            <label><input type="radio" id="ReturningStudent" name="Returning Student">Returning Student</label>
+          </div>
+          <div class="center">
+            Enrollment Quarter(s):
+          </div>
+          <div>
+            <label><input type="checkbox" id="Fall" name="Fall"> Fall</label>
+            <label><input type="checkbox" id="Winter" name="Winter">Winter</label>
+            <label><input type="checkbox" id="Spring" name="Spring">Spring</label>
+            <label><input type="checkbox" id="Summer" name="Summer">Summer</label>
+          </div>
+          <div class="center">
+            <label for="ContactTime">Preferred Contact Time</label>
+          </div>
+          <div>
+            <select name="Contact Time" id="ContactTime" multiple>
+              <option value="Any Time">Any Time</option>
+              <option value="Morning">Morning</option>
+              <option value="Afternoon">Afternoon</option>
+              <option value="Evening">Evening</option>
+            </select>
+          </div>
+        </div>
+        <div class="grid-stretch">
+          <div class="flex">
+            <div class="flex">
+              <div class="buttons">
+                <input type="color" id="ColorTheme" name="Color Theme">
+              </div>
+              <div>
+                <label for="ColorTheme">Color Theme</label>
+              </div>
+            </div>
+            <div class="buttons">
+              <input type="file" id="Attachments" name="Attachments">
+            </div>
+          </div>
+          <div class="center">
+            <label for="AdditionalNotes">Additional Notes</label>
+          </div>
+          <div>
+            <textarea id="AdditionalNotes" name="Additional Notes"></textarea>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="flex">
+          <button type="reset">Reset</button>
+          <button type="submit">Submit</button>
+        </div>
+      </div>
+      <div>
+        <input type="hidden" id="SessionId" name="Session Id" value="test">
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
